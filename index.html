@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão de beleza arcade</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <nav id = menu>
+        <h1> Menu Principal</h1>
+        <ul type='circle'>
+            <li onmouseover="muda('home.png')" onmouseout="muda('home.png')"> <a href="index.html">Home</a></li>
+            <li onmouseover="muda('localizacao.png')" onmouseout="muda('home.png')"> <a href="localizacao.html">Localização</a> </li>
+            <li onmouseover="muda('fotos.png')" onmouseout="muda('home.png')"><a href="fotos.html">Fotos</a> </li>
+            <li onmouseover="muda('multimidia.png')" onmouseout="muda('home.png')"><a href="multimidia.html">Multimidia</a> </li>
+            <!--<ul>
+                <li>Barbas</li>
+                <li>Cabelos</li>
+            </ul> -->
+            <li onmouseover="muda('contato.png')" onmouseout="muda('home.png')"> <a href="fale-conosco.html">Fale conosco</a></li>
+            
+        </ul>
+    </nav>
+</head>
+<script src="script.js"></script>
+<body>
+<div id = 'interface'> <!--td q ta dentro do site ta dentro da div, o q ta fora ta em pos absoluta-->
+    <header id='cabecalho'>
+        <h1>Cabeleireiro Viamão
+        </h1>
+        <h2>Salão de beleza profissional</h2>
+        <img id="icone" src="simbolo3.png" alt="simbolo">
+
+    </header>
+
+<section id='corpo'>
+<article id='Parte-principal'> 
+    <header id='cabecalho-artigo'>
+    <h2>Sobre nosso salão</h2>
+    <h3>Medidas para o Covid19</h3>
+    <h4>Atualizado em 20/dezembro/2020</h4>
+    </header>
+    <figure class="foto-legenda">
+        <img id="icone" src="salao350.jpg" alt="banner">
+    <figcaption>
+        <h1>Venha nos conhecer</h1>
+        <p>Eleito o melhor salão de Viamão</p>
+        <p>Telefone: xxxx:xxxx</p>
+        <p>Rua tau de fulano 869</p>
+    </figcaption>
+    </figure>
+
+    <p>O que seria do nosso visual se não fosse o profissionalismo de especialistas em cabelos, o chamado <a href="https://pt.wikipedia.org/wiki/Cabeleireiro" target="_blank">Cabeleireiro</a>? Suas habilidades em tingir, cortar e dar à nossa imagem uma digna repaginada são, <i>indubitavelmente</i>, honráveis. Mande estas belas mensagens para quem nos apoia e nos ajuda a concretizar mudanças de aparência!</p>
+</article>
+</section>
+<aside id='lateral'>
+<h3>Confira os preços</h3>
+
+<table id="tabelaspec">
+    <caption>Tabela de preços <span>Dez/2020</span></caption>
+    <tr><td class="ce">Barba</td> <td class="cd">R$15,00</td></tr>
+    <tr><td rowspan="2" class="ce">Corte</td><td class="cd">R$16,00 (masculino)</td></tr>
+    <tr><td class="cd">R$18,00 (feminino)</td></tr>
+    <tr><td class="ce">Hidratação</td> <td class="cd">R$30,00</td></tr>
+    </table>
+    </aside>
+
+
+    <footer id='rodape'>
+        <p id="rp">Copyright &copy; 2020 - by Ismael Rodino <br>
+        
+        <a href="http://facebook.com/bauhaus.bengala/" target="_blank">LinkedIn</a>| <a href="https://github.com/ismaelrodino2" target="_blank">Github</a> </p>
+        </footer>
+        </div>   
+        </body>
+        </html>

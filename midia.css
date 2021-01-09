@@ -1,0 +1,14 @@
+div#radio{
+    width: 900px;
+    height: 580px;
+    margin: auto;
+    background: url(radio-tv.png) no-repeat;
+}
+video#filme{
+    display: block;
+    position: relative;
+    left: 79px;
+    top: 5px;
+    width: 450px;
+    height: 400px;
+}

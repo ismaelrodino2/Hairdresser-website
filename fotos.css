@@ -1,0 +1,75 @@
+ul#album{
+    text-align: justify;
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#album li{
+    color: red;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid black;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    -webkit-transition: all .3s ease-in; /*efeito de crescer e ampliar de maneira suave 0.3s d delay*/
+}
+ul#album li:hover{
+    -webkit-transform: scale(1.5) ; /*aqui é o zoom de 1.5 pra kd li*/
+
+}
+ul#album li#foto01{
+    background: url(album/c.jpg) no-repeat;
+    background-position: 50% 50%; /*imagem tá no meio*/
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album li#foto01:hover{
+    background-color: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album li#foto02{
+    background: url(album/h.jpg) no-repeat;
+    background-position: 50% 50%; /*imagem tá no meio*/
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album li#foto02:hover{
+    background-color: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album li#foto03{
+    background: url(album/b.jpg) no-repeat;
+    background-position: 50% 50%; /*imagem tá no meio*/
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album li#foto03:hover{
+    background-color: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album li#foto04{
+    background: url(album/l.jpg) no-repeat;
+    background-position: 50% 50%; /*imagem tá no meio*/
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+ul#album li#foto04:hover{ /*ao passar por cima, a imagem fica100% 200 por 200px e sem cor de fundo*/
+    background-color: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album li span{
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgb(0, 0, 0, .3);
+    font-size: 13pt;
+    line-height: 370px;
+    padding: 5px;
+}
+ul#album li:hover span{
+    opacity: 1;
+}

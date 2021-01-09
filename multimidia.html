@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refazendo cores</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="midia.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <nav id = menu>
+        <h1> Menu Principal</h1>
+        <ul type='circle'>
+            <li onmouseover="muda('home.png')" onmouseout="muda('multimidia.png')"> <a href="index.html">Home</a></li>
+            <li onmouseover="muda('localizacao.png')" onmouseout="muda('multimidia.png')"> <a href="localizacao.html">Localização</a> </li>
+            <li onmouseover="muda('Fotos.png')" onmouseout="muda('multimidia.png')"><a href="fotos.html">Fotos</a> </li>
+            <li onmouseover="muda('multimidia.png')" onmouseout="muda('multimidia.png')"><a href="multimidia.html">Multimídia</a> </li>
+            <!--<ul>
+                <li>Barbas</li>
+                <li>Cabelos</li>
+            </ul> -->
+            <li onmouseover="muda('contato.png')" onmouseout="muda('multimidia.png')"> <a href="fale-conosco.html">Fale conosco</a></li>
+            
+        </ul>
+    </nav>
+    <style>
+        body{
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        p{
+          text-align: justify;
+          text-indent: 20px;  
+        }
+        p#rp{
+            text-align: center;
+            font-size: 12pt;
+        }
+        h1{
+            font-size: 15pt;
+            color: #ffffff;
+            background-color:rgba(0, 0, 0, .3) ;
+            padding: 5px;
+            margin: 0px;
+        }
+        article h2{
+            font-size: 13pt;
+            color: #888888;
+            margin: 0;
+        }
+        article{
+            margin-bottom: 100px;
+        }
+
+    </style>
+</head>
+<script src="script.js"></script>
+<body>
+<div id = 'interface'> <!--td q ta dentro do site ta dentro da div, o q ta fora ta em pos absoluta-->
+    <header id='cabecalho'>
+        <h1>Cabeleireiro Viamão
+        </h1>
+        <h2>Salão de beleza profissional</h2>
+        <img id="icone" src="simbolo3.png" alt="simbolo">
+    </header>
+
+    <article id="local"> <header><h1>Multimidia </h1></header>  
+    </article>
+
+    <p>Veja nossos vídeos</p>
+
+    <div id = radio>
+        <video id="filme" src="hairdresser.mp4" controls poster="psoter.png">
+        desculpe mas não foi possivel carregar o video
+        </video>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MGg-IZJaLfU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <footer id='rodape'>
+        <p id="rp">Copyright &copy; 2020 - by Ismael Rodino <br>
+        
+        <a href="http://facebook.com/bauhaus.bengala/" target="_blank">LinkedIn</a>| <a href="https://github.com/ismaelrodino2" target="_blank">Github</a> </p>
+        </footer>
+        </div>   
+        </body>
+        </html>

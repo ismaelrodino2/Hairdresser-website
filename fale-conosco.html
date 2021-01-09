@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refazendo cores</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="form.css">
+    <script>
+        function calc_total(){
+            var qnt = document.getElementById(('tempo').value);
+            
+        }
+    </script>
+    <nav id = menu>
+        <h1> Menu Principal</h1>
+        <ul type='circle'>
+            <li onmouseover="muda('home.png')" onmouseout="muda('contato.png')"> <a href="index.html">Home</a></li>
+            <li onmouseover="muda('localizacao.png')" onmouseout="muda('contato.png')"> <a href="localizacao.html">Localização</a> </li>
+            <li onmouseover="muda('fotos.png')" onmouseout="muda('contato.png')"><a href="fotos.html">Fotos</a> </li>
+            <li onmouseover="muda('multimidia.png')" onmouseout="muda('contato.png')"><a href="multimidia.html">Multimidia</a> </li>
+            <!--<ul>
+                <li>Barbas</li>
+                <li>Cabelos</li>
+            </ul> -->
+            <li onmouseover="muda('contato.png')" onmouseout="muda('contato.png')"> <a href="fale-conosco.html">Fale conosco</a></li>
+            
+        </ul>
+    </nav>
+</head>
+<script src="script.js"></script>
+<body>
+<div id = 'interface'> <!--td q ta dentro do site ta dentro da div, o q ta fora ta em pos absoluta-->
+    <header id='cabecalho'>
+        <h1>Cabeleireiro Viamão
+        </h1>
+        <h2>Salão de beleza profissional</h2>
+        <img id="icone" src="simbolo3.png" alt="simbolo">
+
+    </header>
+
+<form action="mailto:email.teste@hotmail.com" oninput="calc_total()" method="post" id="fContato"> <!--metodo get aparece as informações no url por isso n é seguro, o post é enviado as informações por pacotes cripto.-->
+    <fieldset>
+        <legend id="usuario">
+            Identificação
+        </legend>
+            <p>
+                <label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"> <!--size = 20 = 20 caracteres de largura - cabem aparentemente pra aparecer 20 letras, pode digitar mais, mas ai cria a barrinha maxlength = limita, n passa disso de caracteres. placeholder = dica do q digitar>>funcionar pra nome tb-->
+            </p>
+           
+          
+    <fieldset id="pedido">
+        <legend>
+            Quero ir
+        </legend>
+            <p><input type="checkbox" name="tPed" id="cPed"></p>
+            <label for="cPed" >Gostaria de agendar?</label>
+            <p><label for="cHora">horário:</label></p>
+            <input type="time" value="hora" id="tempo">
+    </fieldset>
+    
+    <input type="image" name="tEnviar" src="botao-enviar.png">    
+
+</form>
+
+<fieldset>
+    <p>Prefere nos ligar? 56-xxx.xxx.xyxy</p>
+</fieldset>
+
+<footer id='rodape'>
+        <p>Copyright &copy; 2020 - by Ismael Rodino <br>
+        
+    <a href="https://www.linkedin.com/in/ismael-tavares-83b996161/" href="https://github.com/ismaelrodino2" target="_blank">LinkedIn</a>| <a href="https://github.com/ismaelrodino2" target="_blank">Github</a></p>
+    </footer>
+    </div>   
+    </body>
+    </html>
